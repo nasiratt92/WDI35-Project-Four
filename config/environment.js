@@ -1,5 +1,5 @@
-const dbUri = process.env.MONGODB_URI || 'mongodb://localhost/ripe-tomatoes';
-const secret = process.env.SECRET || 'This is the secret';
+const dbUri = process.env.MONGODB_URI || 'mongodb://localhost/bottle-it';
+const secret = process.env.SECRET || 'Miracle tonic';
 
 module.exports = {
   dbUri, secret

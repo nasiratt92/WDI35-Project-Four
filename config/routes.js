@@ -3,6 +3,7 @@ const Router = express.Router();
 // const secureRoute = require('../lib/secureRoute');
 
 const drinksController = require('../controllers/drinksController');
+const eventsController = require('../controllers/eventsController');
 const authController = require('../controllers/authController');
 const availibleFromController = require('../controllers/availibleFromController');
 
@@ -12,7 +13,7 @@ Router.route('/')
   });
 
 // Router.route('/login')
-//   .post(authController.login);
+// .post(authController.login);
 
 Router.route('/register')
   .post(authController.register);
@@ -29,8 +30,12 @@ Router.route('/drinks/:id')
 Router.route('/drinks/:drinkId/availibleFrom')
   .post(availibleFromController.create);
 
-// Router.route('/drinks/:drinkId/availibleFrom/:tagId')
-// .put(availibleFromController.update)
-// .delete(availibleFromController.delete);
+Router.route('/drinks/:drinkId/availibleFrom/:tagId')
+  .put(availibleFromController.update)
+  .delete(availibleFromController.delete);
+
+Router.route('/events')
+  .get(eventsController.index)
+  .post( eventsController.create);
 
 module.exports = Router;

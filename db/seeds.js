@@ -52,7 +52,7 @@ const userData = [
 
 Drink.collection.drop();
 User.collection.drop();
-
+Event.collection.drop();
 
 User.collection.drop();
 Drink.create(drinkData)

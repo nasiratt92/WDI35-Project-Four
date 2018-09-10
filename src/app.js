@@ -12,6 +12,11 @@ import DrinksIndex from './components/drinks/Index';
 import DrinksNew from './components/drinks/New';
 import DrinksEdit from './components/drinks/Edit';
 import DrinksShow from './components/drinks/Show';
+import EventsIndex from './components/events/Index';
+import EventsNew from './components/events/New';
+import EventsEdit from './components/events/Edit';
+import EventsShow from './components/events/Show';
+import NewsIndex from './components/news/Index';
 
 
 class App extends React.Component {
@@ -26,6 +31,11 @@ class App extends React.Component {
           <Route exact path="/drinks/new" component={DrinksNew}/>
           <Route path="/drinks/:id/edit" component={DrinksEdit}/>
           <Route path="/drinks/:id" component={DrinksShow}/>
+          <Route exact path="/events" component={EventsIndex}/>
+          <Route exact path="/events/new" component={EventsNew}/>
+          <Route path="/events/:id/edit" component={EventsEdit}/>
+          <Route path="/events/:id" component={EventsShow}/>
+          <Route exact path="/news" component={NewsIndex}/>
         </Switch>
         {/* <div>
           <h1>Hello World</h1>

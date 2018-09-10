@@ -4,6 +4,7 @@ const Router = express.Router();
 
 const drinksController = require('../controllers/drinksController');
 const eventsController = require('../controllers/eventsController');
+const newsController = require('../controllers/newsController');
 const authController = require('../controllers/authController');
 const availibleFromController = require('../controllers/availibleFromController');
 
@@ -23,19 +24,22 @@ Router.route('/drinks')
   .post( drinksController.create);
 
 Router.route('/drinks/:id')
-  .get(drinksController.show)
-  .put(drinksController.update)
-  .delete(drinksController.delete);
+  .get(drinksController.show);
+  // .put(drinksController.update)
+  // .delete(drinksController.delete);
 
 Router.route('/drinks/:drinkId/availibleFrom')
   .post(availibleFromController.create);
 
 Router.route('/drinks/:drinkId/availibleFrom/:tagId')
-  .put(availibleFromController.update)
-  .delete(availibleFromController.delete);
+  // .put(availibleFromController.update)
+  // .delete(availibleFromController.delete);
 
 Router.route('/events')
   .get(eventsController.index)
-  .post( eventsController.create);
+  .post(eventsController.create);
+Router.route('/news')
+  .get(newsController.index);
+
 
 module.exports = Router;

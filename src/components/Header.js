@@ -11,6 +11,8 @@ class Header extends React.Component {
       <header className="navbar is-success is-fixed">
         <Link className="navbar-item" to="/">Home</Link>
         <Link className="navbar-item" to="/drinks">Drinks</Link>
+        <Link className="navbar-item" to="/events">Events</Link>
+        <Link className="navbar-item" to="/news">News</Link>
         <Link className="navbar-item" to="/drinks/new">Add a drink</Link>
         <Link className="navbar-item" to="/register">Register</Link>
       </header>

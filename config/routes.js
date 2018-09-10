@@ -25,15 +25,15 @@ Router.route('/drinks')
 
 Router.route('/drinks/:id')
   .get(drinksController.show);
-  // .put(drinksController.update)
-  // .delete(drinksController.delete);
+// .put(drinksController.update)
+// .delete(drinksController.delete);
 
 Router.route('/drinks/:drinkId/availibleFrom')
   .post(availibleFromController.create);
 
-Router.route('/drinks/:drinkId/availibleFrom/:tagId')
-  // .put(availibleFromController.update)
-  // .delete(availibleFromController.delete);
+Router.route('/drinks/:drinkId/availibleFrom/:tagId');
+// .put(availibleFromController.update)
+// .delete(availibleFromController.delete);
 
 Router.route('/events')
   .get(eventsController.index)

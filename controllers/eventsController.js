@@ -1,7 +1,7 @@
 const Event = require('../models/event');
 
 function eventsIndex(req, res, next) {
-  Event.find()
+  Event.find().populate('drink')
     .then(events => res.json(events))
     .catch(next);
 }

@@ -1,21 +1,31 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import Auth from '../lib/Auth';
+import EventsIndex from './events/Index';
+import NewsIndex from './news/Index';
 
-
-class Header extends React.Component {
+class eventsAndNewsIndex extends React.Component {
 
 
   render(){
     return(
-      <header className="navbar is-success is-fixed">
-        <Link className="navbar-item" to="/">Home</Link>
-        <Link className="navbar-item" to="/drinks">Drinks</Link>
-        <Link className="navbar-item" to="/eventsAndNews">Events & News</Link>
-        <Link className="navbar-item" to="/drinks/new">Add a drink</Link>
-        <Link className="navbar-item" to="/register">Register</Link>
-      </header>
-
+      <div>
+        <h2 className="title is-1">.</h2>
+        <h2 className="title is-1"> Latest News & Events </h2>
+        <div className="columns is-multiline text-is-center">
+          <div className="column is-half card">
+            <h2 className="title is-2"><FontAwesomeIcon
+              icon="newspaper"/>   Latest News</h2>
+            <NewsIndex/>
+          </div>
+          <div className="column is-half card">
+            <h2 className="title is-2"><FontAwesomeIcon
+              icon="calendar-alt"/>   Events </h2>
+            <EventsIndex/>
+          </div>
+        </div>
+      </div>
       // <Navbar>
       //   <Navbar.Header>
       //     <Navbar.Brand>
@@ -42,4 +52,4 @@ class Header extends React.Component {
   }
 }
 
-export default withRouter(Header);
+export default withRouter(eventsAndNewsIndex);

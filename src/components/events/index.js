@@ -29,13 +29,14 @@ class EventsIndex extends React.Component {
                 <article className="media">
                   <figure className="media-left">
                     <p className="image is-64x64">
-                      <img src={event.drink.imgUrl}/>
+                      <img />
+                      {/*need to add photo of drink struggling to populate */}
                     </p>
                   </figure>
                   <div className="media-content">
                     <div className="content">
                       <p>
-                        <strong>{event.name}</strong> <small>{event.city}</small> <small>{event.date}{/*.toDateString()*/}</small>
+                        <strong>{event.name}</strong> <small>{event.city}</small> <small>{(new Date(event.date)).toDateString()}</small>
                         <br/>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
                       </p>

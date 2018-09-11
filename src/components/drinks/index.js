@@ -15,10 +15,10 @@ class DrinksIndex extends React.Component {
     return(
       <section>
         <h2 className="tile is-2">Our great finds</h2>
-        <div className="columns is multiline text-is-center">
+        <div className="columns is-multiline text-is-center">
           {this.state.drinks && this.state.drinks.map(drink =>{
             return (
-              <Link to={`/drinks/${drink._id}`} key={drink._id} className="column is-3 card">
+              <Link to={`/drinks/${drink._id}`} key={drink._id} className="column is-half card">
                 <img src={drink.imgUrl}></img>
                 <p>{drink.name}</p>
               </Link>

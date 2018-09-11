@@ -10,6 +10,8 @@
     ]
   },
   "scripts": {
+    "build": "webpack -p",
+    "start": "yarn build && node index",
     "start:server": "nodemon",
     "start:client": "webpack-dev-server",
     "seed": "node db/seeds"
@@ -43,6 +45,11 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
   },
+  "rnpm": {
+  "assets": [
+    "fonts"
+  ]
+},
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",

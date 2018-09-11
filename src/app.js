@@ -13,6 +13,7 @@ import 'bulma/css/bulma.css';
 // require('react-bootstrap/lib/NavbarHeader');
 import Header from './components/Header';
 // import Footer from './components/Footer';
+import Home from './components/Home';
 // import AuthLogin from './components/auth/Login';
 import AuthRegister from './components/auth/Register';
 import DrinksIndex from './components/drinks/Index';
@@ -35,6 +36,7 @@ class App extends React.Component {
           {/* <Route exact path="/login" /> */}
           <Route exact path="/register" component={AuthRegister}/>
           <Route exact path="/drinks" component={DrinksIndex}/>
+          <Route exact path="/" component={Home}/>
           <Route exact path="/drinks/new" component={DrinksNew}/>
           <Route path="/drinks/:id/edit" component={DrinksEdit}/>
           <Route path="/drinks/:id" component={DrinksShow}/>

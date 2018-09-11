@@ -13,6 +13,7 @@ class Header extends React.Component {
         <Link className="navbar-item" to="/drinks">Drinks</Link>
         <Link className="navbar-item" to="/eventsAndNews">Events & News</Link>
         <Link className="navbar-item" to="/drinks/new">Add a drink</Link>
+        <Link className="navbar-item" to="/event/new">Add an Event</Link>
         <Link className="navbar-item" to="/register">Register</Link>
       </header>
 

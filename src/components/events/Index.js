@@ -29,7 +29,7 @@ class EventsIndex extends React.Component {
                 <article className="media">
                   <figure className="media-left">
                     <p className="image is-64x64">
-                      <img src={event.drink.imgUrl} />
+                      {/* <img src={event.drink.imgUrl} /> */}
                       {/*need to add photo of drink struggling to populate */}
                     </p>
                   </figure>

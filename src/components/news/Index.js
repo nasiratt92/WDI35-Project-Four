@@ -15,15 +15,15 @@ class NewsIndex extends React.Component {
   render() {
     return(
       <div>
-        {this.state.articles && this.state.articles.map(article =>{
+        {this.state.articles && this.state.articles.map((article, i) =>{
           return (
-            <Link to={article.url} key={article._id} >
+            <a href={article.url} key={i} >
               <h2 className="title is-2">{article.title}</h2>
               <h4 className="title is-4">{article.description}</h4>
               <img src={article.urlToImage}></img>
               <small>Source:  {article.source.name}, {article.publishedAt}</small>
               <hr/>
-            </Link>
+            </a>
           );
         })}
       </div>

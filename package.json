@@ -9,6 +9,9 @@
       "src/*"
     ]
   },
+  "engines": {
+  "node": "9.10.0"
+},
   "scripts": {
     "build": "webpack -p",
     "start": "yarn build && node index",

@@ -1,8 +1,9 @@
 const dbUri = process.env.MONGODB_URI || 'mongodb://localhost/bottle-it';
 const secret = process.env.SECRET || 'Miracle tonic';
+const port = process.env.PORT || 4000;
 const newsApiKey = process.env.NEWS_API_KEY;
 module.exports = {
-  dbUri, secret, newsApiKey
+  port, dbUri, secret, newsApiKey
 };
 
 

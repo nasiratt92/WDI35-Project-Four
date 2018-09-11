@@ -4272,6 +4272,12 @@ react-bootstrap@^0.32.4:
     uncontrollable "^5.0.0"
     warning "^3.0.0"
 
+react-day-picker@^7.2.3:
+  version "7.2.3"
+  resolved "https://registry.yarnpkg.com/react-day-picker/-/react-day-picker-7.2.3.tgz#51722dc66ae3478af2dfdb754350db6a1c521332"
+  dependencies:
+    prop-types "^15.6.2"
+
 react-dom@^16.5.0:
   version "16.5.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.0.tgz#57704e5718669374b182a17ea79a6d24922cb27d"

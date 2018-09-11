@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { Link } from 'react-router-dom';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class EventsIndex extends React.Component {
   state = {}
@@ -29,7 +29,7 @@ class EventsIndex extends React.Component {
                 <article className="media">
                   <figure className="media-left">
                     <p className="image is-64x64">
-                      <img src="{event.drink.imgUrl}"/>
+                      <img src={event.drink.imgUrl}/>
                     </p>
                   </figure>
                   <div className="media-content">

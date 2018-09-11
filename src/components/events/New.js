@@ -15,6 +15,10 @@ class EventsNew extends React.Component{
     // console.log('event.target.name is', event.target.name);
     this.setState({[name]: value});
   }
+  handleDayChange = day => {
+    // console.log('event.target.name is', event.target.name);
+    this.setState({date: day});
+  }
   render(){
     return(
       <section>
@@ -23,6 +27,7 @@ class EventsNew extends React.Component{
         <EventForm
           handleSubmit={this.handleSubmit}
           handleChange={this.handleChange}
+          handleDayChange={this.handleDayChange}
           event={this.state}
         />
       </section>

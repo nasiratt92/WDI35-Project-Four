@@ -30,7 +30,6 @@ class App extends React.Component {
   render() {
     return (
       <main>
-
         <Header/>
         <Switch>
           {/* <Route exact path="/login" /> */}

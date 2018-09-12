@@ -15,7 +15,7 @@ function EventForm({handleDayChange,handleSubmit, handleChange, event}){
         <label className="label" htmlFor="date">Please type a day:</label>
         <DayPickerInput onDayChange={handleDayChange} />
       </div>
-
+    
       <button className="button is-success is-rounded">Submit</button>
     </form>
   );

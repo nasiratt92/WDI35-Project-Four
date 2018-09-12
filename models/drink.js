@@ -12,6 +12,7 @@ const drinkSchema = new mongoose.Schema({
       lon: {type: Number},
       city: {type: String},
       establishmentName: String,
+      image: { data: Buffer, contentType: String },
       establishmentImageUrl: String
     }
   ]

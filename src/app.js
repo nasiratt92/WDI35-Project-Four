@@ -2,14 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Switch, Route, BrowserRouter} from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faSearchLocation,faNewspaper,faCalendarAlt , faMapMarkerAlt,faEnvelope, faKey } from '@fortawesome/free-solid-svg-icons';
+import {faImage, faSearchLocation,faNewspaper,faCalendarAlt , faMapMarkerAlt,faEnvelope, faKey } from '@fortawesome/free-solid-svg-icons';
 // import bulmaCalendar from '/node_modules/bulma-extensions/bulma-calendar/dist/bulma-calendar.min.js'
 
-library.add(faSearchLocation, faNewspaper, faMapMarkerAlt,faEnvelope, faKey,faCalendarAlt);
+library.add(faImage, faSearchLocation, faNewspaper, faMapMarkerAlt,faEnvelope, faKey,faCalendarAlt);
 
 
 // import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import 'bulma/css/bulma.css';
+import './scss/style.scss';
 // require('react-bootstrap/lib/NavbarHeader');
 import Header from './components/Header';
 // import Footer from './components/Footer';
@@ -31,6 +32,7 @@ class App extends React.Component {
   render() {
     return (
       <main>
+
         <Header/>
         <Switch>
           {/* <Route exact path="/login" /> */}
@@ -48,7 +50,7 @@ class App extends React.Component {
         </Switch>
         {/* <div>
           <h1>Hello World</h1>
-          <img src="src/assets/HatchfulExport-All/logo.png"></img>
+          <img src="src/assets/HatchfulExport-All/linkedin_banner_image_2"></img>
         </div> */}
         {/* <Footer/> */}
       </main>

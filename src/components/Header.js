@@ -1,44 +1,90 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 // import Auth from '../lib/Auth';
 
 
 class Header extends React.Component {
-
+// className="navbar is-success is-fixed"
 
   render(){
     return(
-      <header className="navbar is-success is-fixed">
-        <Link className="navbar-item" to="/">Home</Link>
-        <Link className="navbar-item" to="/drinks">Drinks</Link>
-        <Link className="navbar-item" to="/eventsAndNews">Events & News</Link>
-        <Link className="navbar-item" to="/drinks/new">Add a drink</Link>
-        <Link className="navbar-item" to="/events/new">Add an Event</Link>
-        <Link className="navbar-item" to="/register">Register</Link>
+      <header >
+        <div>
+          <img className="navbar-item" src='/assets/HatchfulExport-All/linkedin_banner_image_2.png' />
+
+        </div>
+        <nav className="navbar is-transparent is-fixed-top">
+          <div className="navbar-brand">
+            <a className="navbar-item" href="/">
+              <img src="/assets/HatchfulExport-All/twitter_header_photo_2.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28"/>
+            </a>
+            <div className="navbar-burger burger" data-target="navbarExampleTransparentExample">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="navbarExampleTransparentExample" className="navbar-menu">
+            <div className="navbar-start">
+              <a className="navbar-item" href="/">
+              Home
+              </a>
+              <div className="navbar-item has-dropdown is-hoverable">
+                <a className="navbar-link" href="/documentation/overview/start/">
+              Drinks
+                </a>
+                <div className="navbar-dropdown is-boxed">
+                  <a className="navbar-item" href="/drinks">
+              See All
+                  </a>
+                  <a className="navbar-item" href="/drinks/new">
+            Add New Drink
+                  </a>
+                  <a className="navbar-item" href="/eventsAndNews">
+          News and Events
+                  </a>
+                  <a className="navbar-item" href="events/new">
+        Add a new Event
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <div className="navbar-end">
+              <div className="navbar-item">
+                <div className="field is-grouped">
+                  <p className="control">
+                    <a className="bd-tw-button button" href="https://twitter.com/intent/tweet?text=Check%20out%20this%20cool%20soft%20drink%20site%20I%20found%20%20http://bit.ly/bottle-it">
+                      {/* <button className="w-inline-block social-share-btn tw" href="https://twitter.com/intent/tweet?" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=%20Check%20up%20this%20awesome%20content' + encodeURIComponent(document.title) + ':%20 ' + encodeURIComponent(document.URL)); return false;"></button> */}
+                      <span>
+                        Tweet
+                      </span>
+                    </a>
+                  </p>
+                  <p className="control">
+                    <a className="bd-tw-button button" href="https://www.facebook.com/sharer/sharer.php?u=&t=">
+                      <span>
+                        Share
+                      </span>
+                    </a>
+                  </p>
+                  <p className="control">
+                    <a className="button is-primary" href="/register">
+                      <span className="icon">
+                        <i className="user-plus"></i>
+                      </span>
+                      <span>Sign up</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
       </header>
 
-      // <Navbar>
-      //   <Navbar.Header>
-      //     <Navbar.Brand>
-      //       <a href="#home">React-Bootstrap</a>
-      //     </Navbar.Brand>
-      //   </Navbar.Header>
-      //   <Nav>
-      //     <NavItem eventKey={1} href="#">
-      //       Link
-      //     </NavItem>
-      //     <NavItem eventKey={2} href="#">
-      //       Link
-      //     </NavItem>
-      //     <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-      //       <MenuItem eventKey={3.1}>Action</MenuItem>
-      //       <MenuItem eventKey={3.2}>Another action</MenuItem>
-      //       <MenuItem eventKey={3.3}>Something else here</MenuItem>
-      //       <MenuItem divider />
-      //       <MenuItem eventKey={3.4}>Separated link</MenuItem>
-      //     </NavDropdown>
-      //   </Nav>
-      // </Navbar>;
     );
   }
 }

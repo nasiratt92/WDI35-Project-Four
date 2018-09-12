@@ -22,7 +22,7 @@ class eventsAndNewsIndex extends React.Component {
           <div className="column is-half card">
             <h2 className="title is-2"><FontAwesomeIcon
               icon="calendar-alt"/>   Events </h2>
-            <EventsIndex/>
+            <EventsIndex className="card"/>
           </div>
         </div>
       </div>

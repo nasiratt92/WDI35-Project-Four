@@ -15,7 +15,7 @@ class EventsIndex extends React.Component {
   render() {
     return(
       <section>
-        <h2 className="title is-2">Currently {this.state.events && this.state.events.length} events</h2>
+        <h2 className="title is-2 card">Currently {this.state.events && this.state.events.length} events</h2>
         <div >
           {this.state.events && this.state.events.map((event, i) =>{
             return (

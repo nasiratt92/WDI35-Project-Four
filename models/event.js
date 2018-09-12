@@ -6,8 +6,7 @@ const eventSchema = new mongoose.Schema({
   location: String,
   description: String,
   date: Date,
-  drink:
-  {type: mongoose.Schema.ObjectId, ref: 'Drink'}
+  drink: {type: mongoose.Schema.ObjectId, ref: 'Drink'}
 });
 
 

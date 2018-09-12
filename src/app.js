@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Switch, Route, BrowserRouter} from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import {faImage, faSearchLocation,faNewspaper,faCalendarAlt , faMapMarkerAlt,faEnvelope, faKey } from '@fortawesome/free-solid-svg-icons';
+import {  faImage, faSearchLocation,faNewspaper,faCalendarAlt , faMapMarkerAlt,faEnvelope, faKey } from '@fortawesome/free-solid-svg-icons';
 // import bulmaCalendar from '/node_modules/bulma-extensions/bulma-calendar/dist/bulma-calendar.min.js'
 
-library.add(faImage, faSearchLocation, faNewspaper, faMapMarkerAlt,faEnvelope, faKey,faCalendarAlt);
-
+library.add( faImage, faSearchLocation, faNewspaper, faMapMarkerAlt,faEnvelope, faKey, faCalendarAlt);
+// faUserPlus, faTwitter,
 
 // import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import 'bulma/css/bulma.css';

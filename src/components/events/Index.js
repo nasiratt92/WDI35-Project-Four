@@ -8,7 +8,7 @@ class EventsIndex extends React.Component {
   componentDidMount(){
     axios.get('api/events')
       .then(res => {
-        this.setState({events: res.data});
+        this.setState({events: res.data}, () =>console.log(this.state));
       });
   }
 
@@ -28,8 +28,8 @@ class EventsIndex extends React.Component {
                 </Link> */}
                 <article className="media">
                   <figure className="media-left">
-                    <p className="image is-64x64">
-                      {/* <img src={event.drink.imgUrl} /> */}
+                    <p className="image is-64x64 is-rounded">
+                      {event.drink &&  <img src={event.drink.imgUrl } />}
                       {/*need to add photo of drink struggling to populate */}
                     </p>
                   </figure>

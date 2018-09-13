@@ -20,6 +20,7 @@ class EventsIndex extends React.Component {
           {this.state.events && this.state.events.map((event, i) =>{
             return (
               <div key={i} >
+                <hr/>
                 {/* <Link to={`/events/${event._id}`} key={event._id}>
                   <img src={event.eventPoster}></img>
                   <p className="title is-4">{event.name}</p>
@@ -29,7 +30,7 @@ class EventsIndex extends React.Component {
                 <article className="media">
                   <figure className="media-left">
                     <p className="image is-64x64 is-rounded">
-                      {event.drink &&  <img src={event.drink.imgUrl } />}
+                      {event.drink &&  <img className="is-rounded" src={event.drink.imgUrl } />}
                       {/*need to add photo of drink struggling to populate */}
                     </p>
                   </figure>

@@ -13,7 +13,7 @@ import 'bulma/css/bulma.css';
 import './scss/style.scss';
 // require('react-bootstrap/lib/NavbarHeader');
 import Header from './components/Header';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 import Home from './components/Home';
 // import AuthLogin from './components/auth/Login';
 import AuthRegister from './components/auth/Register';
@@ -48,11 +48,11 @@ class App extends React.Component {
           <Route path="/events/:id" component={EventsShow}/>
           <Route exact path="/eventsAndNews" component={eventsAndNewsIndex}/>
         </Switch>
+        <Footer/>
         {/* <div>
           <h1>Hello World</h1>
           <img src="src/assets/HatchfulExport-All/linkedin_banner_image_2"></img>
         </div> */}
-        {/* <Footer/> */}
       </main>
     );
   }

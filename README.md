@@ -3,19 +3,17 @@
 ### Overview
 A site for soft drink fans to celebrate cool and hipster soft drinks.
 
-[Bottle-it - Link](bit.ly/bottle-it)
+### Technical Requirements
 
-![picture alt](https://i.imgur.com/ilGKzRq.png "Home Page")
 
-### Key features:
-
-- Index page of soft-drinks
-- Form to add new drink to the index including feature to latitude and longitude of store locations.
-- News feed regarding world news on soft-drinks
-- Fan drinks events listings
-- Add event "Soft drink Jam" feature (i.e. Fans can host an event where one of the soft drinks from the drinks index will be drank)
-- Two buttons to Social media share the site using Twitter and Facebook account  
-
+* **Build a full-stack application** by making your own backend and your own front-end <kbd>✓</kbd>
+* **Use an Express API** to serve your data from a Mongo database. <kbd>✓</kbd>
+* **Consume your API with a separate front-end** built with React. <kbd>✓</kbd>
+* **Be a complete product** which most likely means multiple relationships and CRUD functionality for at least a couple of models. <kbd>✓</kbd>
+* **Implement thoughtful user stories/wireframes** that are significant enough to help you know which features are core MVP and which you can cut. <kbd>✓</kbd>
+* **Have a visually impressive design**
+* **Be deployed online** so it's publicly accessible. <kbd>✓</kbd>
+---
 ### Technologies:
 
 - HTML5
@@ -35,18 +33,20 @@ A site for soft drink fans to celebrate cool and hipster soft drinks.
 - Trello
 - Yarn
 
-### Technical Requirements
 
-You must:
+![picture alt](https://i.imgur.com/ilGKzRq.png "Home Page")
 
-* **Build a full-stack application** by making your own backend and your own front-end <kbd>✓</kbd>
-* **Use an Express API** to serve your data from a Mongo database. <kbd>✓</kbd>
-* **Consume your API with a separate front-end** built with React. <kbd>✓</kbd>
-* **Be a complete product** which most likely means multiple relationships and CRUD functionality for at least a couple of models. <kbd>✓</kbd>
-* **Implement thoughtful user stories/wireframes** that are significant enough to help you know which features are core MVP and which you can cut. <kbd>✓</kbd>
-* **Have a visually impressive design**
-* **Be deployed online** so it's publicly accessible. <kbd>✓</kbd>
----
+### Key features:
+
+- Index page of soft-drinks
+- Form to add new drink to the index including feature to latitude and longitude of store locations.
+- News feed regarding world news on soft-drinks
+- Fan drinks events listings
+- Add event "Soft drink Jam" feature (i.e. Fans can host an event where one of the soft drinks from the drinks index will be drank)
+- Two buttons to Social media share the site using Twitter and Facebook account  
+
+
+[Bottle-it - Link](https://bottle-it.herokuapp.com/)
 
 ### Project planning
 
@@ -71,7 +71,7 @@ Some other examples include:
 - Creating a date picker using a React plugin without using HTML form field type "Date". Initially I intended to use [bulma-calender](https://wikiki.github.io/components/calendar/) an extension to my CSS framework, however after few hours I was not able to integrate this into the form field due to time, and I changed my method of approach to a React plugin (react-day-picker). The plugin was easily installed and was simple to import into the form.
 - Uploading an image of the drink using file picker. This was a challenge I imposed on myself to after completing project MVP. The backend model contained a field type:Buffer to store image. The front end form submission had a field type: "file" was created. However, I was not able to understand the props which were handed over and was not able to write a function store the image.
 
-As an overview this project served as a learning curve for many developer skills, the most important being time management. I had achieved my MVP and second degree MVP development, however, I was not able to fully complete the additional features. Which resulted in time shortage on some frontend development and styling.
+As an overview, this project served as a learning curve for many developer skills, the most important being time management. I had achieved my MVP and second degree MVP development, however, I was not able to fully complete the additional features. Which resulted in time shortage on some frontend development and styling.
 
 
 ---
@@ -96,7 +96,7 @@ I used [Hatchful](https://hatchful.shopify.com/), an online tool, to create a su
 [Link - full branding  resources supplied by Hatchful](./src/assets/HatchfulExport-All "Hatchful resorces folder")
 
 
-The wireframes supplied were sufficient to complete site design scheme as developer.
+The wireframes supplied were sufficient to complete site design scheme.
 
 ##### Wireframe Screenshots:
 
